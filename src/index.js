@@ -3,4 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+function MainApp() {
+
+    return (
+
+        <div>
+            <App></App>
+        </div>
+    )
+};
+
+
+ReactDOM.render(<MainApp />, document.getElementById("root"));
