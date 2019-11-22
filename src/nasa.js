@@ -1,15 +1,21 @@
 import React from "react";
+import styled from "styled-components";
+
+const PicContainer = styled.div`
+width: 1100px;
+height: 1000px;
+background-color: black;
+margin: auto;
+`;
+
 
 const Nasa = props => {
 
 console.log('this is the props', props)
     return (
-        <div>
-            <p> { props.textContent.date} </p>
-            <p> { props.textContent.title } </p>
-            <img src="https://apod.nasa.gov/apod/image/1911/Arp273_HubblePohl_960.jpg"></img>
-           <p> { props.textContent.explanation } </p>
-        </div>
+        <PicContainer>
+            <img src={props.textContent.url}></img>
+        </PicContainer>
         
     )
 };

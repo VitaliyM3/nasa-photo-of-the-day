@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import Nasa from "./nasa";
+import Explan from "./explan";
+import Title from "./title"
+
 
 function App() {
 
@@ -16,9 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      <p>
+        <Title textContent={ data }></Title>
         <Nasa textContent={ data }></Nasa>
-      </p>
+        <Explan textContent={ data }></Explan>
     </div>
   );
 }
